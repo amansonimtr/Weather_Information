@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wstyle2.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1><strong>Weather App</strong></h1>
+
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+        <div class="weather-container">
+            <!--Grant location Container-->
+            <div class="sub-container grant-location-container">
+                <img src="https://img.freepik.com/free-vector/location_53876-25530.jpg?size=626&ext=jpg" width="80px"
+                    height="80px" loading="lazy">
+                <p id="shambhu">GrantLocation Access</p>
+                <p id="nath">Allow access to get weather information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!--Search Form-->
+
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search The City" data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="https://cdn-icons-png.flaticon.com/128/9177/9177086.png" width="20px" height="20px"
+                        loading="lazy">
+                </button>
+
+            </form>
+
+            <!--Loading screen container-->
+            <div class="sub-container loading-container">
+                <img src="https://images.unsplash.com/photo-1607434472257-d9f8e57a643d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9hZGluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                    width="150px" height="150">
+                <p> Loading....</p>
+            </div>
+
+            <!--Show weather info-->
+            <div class="sub-container user-info-container">
+                <!--city name and flag-->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+                <!--weather descripton-->
+                <p data-weatherDesc></p>
+
+                <!--weather icon-->
+                <img data-weatherIcon>
+                <!--weather temprature-->
+                <p data-temp></p>
+
+                <!-- 3 card parameter-->
+                <div class="parameter-container">
+                    <!-- card  1-->
+
+                    <div class="parameter">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG0AJPN00t79UrusRd092A9cPPIkx_XXxADBwBRNC3gg&s"
+                            width="80px" height="80px">
+                        <p> Wind Speed</p>
+                        <p data-windSpeed></p>
+                    </div>
+
+                    <!--card 2-->
+
+                    <div class="parameter">
+                        <img src="https://img.icons8.com/?size=1x&id=46608&format=png" width="80px" height="80px">
+                        <p> Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <!-- card 3-->
+
+                    <div class="parameter">
+                        <img src="https://img.freepik.com/free-vector/illustration-cloud-icon_53876-6322.jpg?size=626&ext=jpg&ga=GA1.1.494694760.1686982158&semt=ais"
+                            width="80px" height="80px">
+                        <p>Cloud</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="weather2.js"></script>
+</body>
+
+</html>
